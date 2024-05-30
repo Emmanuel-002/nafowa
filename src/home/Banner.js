@@ -29,24 +29,31 @@ function Banner() {
     {   
         src: banner1,
         alt: "Banner 1",
-        description: `This impressive paella is a perfect party dish and a fun meal to cook
-        together with your guests. Add 1 cup of frozen peas along with the mussels,
-        if you like.`
+        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut facilis quisquam fugiat similique saepe aperiam neque dolorem 
+        odio asperiores exercitationem velit, nihil commodi, molestias provident eligendi reiciendis eum! Rerum dolorem ipsum animi libero tempore, 
+        similique ab sapiente repellendus explicabo possimus! Molestias rem tempore necessitatibus sed, quos illum quod quidem, velit vero doloremque, 
+        in dolorum incidunt. Sapiente provident nihil, quam repellat temporibus eos eius aperiam iusto cupiditate magnam maxime sed tempora recusandae 
+        `
     },
     {   
         src: banner2,
         alt: "Banner 2",
-        description: `This impressive paella is a perfect party dish and a fun meal to cook
-        together with your guests. Add 1 cup of frozen peas along with the mussels,
-        if you like.`
+        description: `assumenda eligendi? Libero quisquam dolores expedita! Harum, eligendi sit labore saepe earum consequatur adipisci ex eaque neque ratione modi 
+        odio porro aliquid non numquam est, dolorem dolores molestias vero quod hic consequuntur odit. Non totam voluptatem temporibus doloremque ipsam 
+        quibusdam voluptatibus. Ab illo, consectetur distinctio vel temporibus quaerat ipsum quis fugiat debitis adipisci incidunt aperiam, est 
+        accusantium aspernatur voluptatibus fugit reprehenderit voluptate laudantium rem veritatis! Alias, doloribus itaque optio odio corrupti,
+        `
     },
 
     {
         src: banner3,
         alt: "Banner 3",
-        description: `This impressive paella is a perfect party dish and a fun meal to cook
-        together with your guests. Add 1 cup of frozen peas along with the mussels,
-        if you like.`
+        description: ` harum inventore et, illum deserunt eum dolorem voluptate molestiae maxime nostrum? Culpa eius placeat tempora vel facere cupiditate alias 
+        dolore blanditiis nobis, dignissimos voluptas rem, quia, quaerat neque animi aspernatur? Numquam, nostrum quam? Quia autem exercitationem 
+        porro sunt facere optio odio, dolorem repellendus qui vitae alias dignissimos, fugiat asperiores temporibus repellat quisquam dolore quae! 
+        Et, deserunt. Consequuntur, reprehenderit velit, autem esse vitae veniam ratione facere tempore neque est exercitationem quasi blanditiis 
+        fugiat saepe quod! Aperiam nemo hic eaque mollitia vero fuga excepturi! Dignissimos laborum fuga consectetur? Ullam porro, vero iste eos ab 
+        ad eaque tempore voluptas fugiat quidem magni, aliquid quam! Esse dolores quaerat, reprehenderit autem iste iure.`
     }
 ]
 

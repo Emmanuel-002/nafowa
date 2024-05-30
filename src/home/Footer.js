@@ -31,7 +31,7 @@ const Footer = () => {
             <a target='_blank' href="mailto:segseyman@gmail.com" style={{textDecoration:'none',color:'#1565c0',padding:'10px'}}> <MailIcon /> office@nafowa.org</a><br/>
 
         </Grid>
-        <Grid item xs={12} md={6} lg={4} style={{textAlign:'center'}}>
+        <Grid item xs={12} md={6} lg={4} style={{textAlign:'center',padding:'10px'}}>
         <form action="https://public.herotofu.com/v1/ab6ca490-1d5e-11ef-90b8-b52fc5a15495" method="post" accept-charset="UTF-8">
             <h2>Contact Us</h2>
                 <input name="Name" placeholder='Your name' id="name" type="text" required style={{marginBottom:'10px',width:'100%',height:'30px'}} /><br />
@@ -43,9 +43,8 @@ const Footer = () => {
         </Grid>
       </Grid>
     </Box>
-        <Typography style={{textAlign:'center'}}>
-            Designed By NAF Alpha Devs<br />
-            Copyright &#169; {year} NAFOWA
+        <Typography style={{textAlign:'center',marginTop:'50px'}}>
+           <p> Designed By NAF Alpha Devs <br /> Copyright &#169; {year} NAFOWA</p>
         </Typography>
     </Container>
     )
