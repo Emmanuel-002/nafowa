@@ -51,15 +51,15 @@ function Banner() {
 ]
 
   return (
-    <Container>
+    <Container id='#'>
          <Box 
             sx={{ flexGrow: 1}}
             style={{marginTop:'20px'}}
         >
-              <Item style={{padding:'20px'}}>
-                <h2>Nigerian Air Force Officers' Wife Association</h2>
-                <span style={{marginBottom:'10px', backgroundColor:'#1565c0', color:'#ffffff', padding:'10px', borderRadius:'5px'}}>Service to Humanity</span>
-                </Item>
+          <Item style={{padding:'20px'}}>
+            <h2>Nigerian Air Force Officers' Wife Association</h2>
+            <span style={{marginBottom:'10px', backgroundColor:'#1565c0', color:'#ffffff', padding:'10px', borderRadius:'5px'}}>Service to Humanity</span>
+          </Item>
         </Box>
     <Carousel>
         {

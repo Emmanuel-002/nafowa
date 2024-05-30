@@ -25,7 +25,7 @@ const about = [
 
 const About = () => {
     return(
-        <Container>
+        <Container id='about'>
     <Grid container spacing={2}>
     {about.map(item=>(
         <Grid item sm={12} lg={4} style={{height:'40vh'}}>

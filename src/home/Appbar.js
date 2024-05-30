@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import logo from '../images/logo.jpeg'
 
-const pages = ['Services', 'News', 'About', 'Contact'];
+const pages = ['services', 'news', 'about', 'contact'];
 const settings = ['Login', 'Register'];  
 
 const NavBar = (props) => {
@@ -118,7 +118,7 @@ const NavBar = (props) => {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                <a href={`#${page}`} style={{textDecoration:'none',color:'#fff'}}>{page}</a>
               </Button>
             ))}
           </Box>

@@ -41,7 +41,7 @@ const services = [
 
 const Services = () => {
    return(
-    <Container style={{marginTop:'50px'}}>
+    <Container id='services' style={{marginTop:'50px'}}>
         <h2 style={{textAlign:'center'}}>Our Services</h2>
     <Grid container spacing={2}>
     {services.map(service=>(
