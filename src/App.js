@@ -1,12 +1,14 @@
 import * as React from 'react';
 import Home from './home/Home';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SubmitMessage from './SubmitMessage';
 
 function App() {
   return(
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/compliment" element={<SubmitMessage />} />
 {/* 
         <Route path="/Adminlogin" element={<LoginPage role="Admin" />} />
         <Route path="/Studentlogin" element={<LoginPage role="Student" />} />
