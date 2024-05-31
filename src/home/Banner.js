@@ -67,9 +67,9 @@ function Banner() {
 
   return (
     <Container id='#'>
-      <Box sx={{ flexGrow: 1 }} style={{margin:'1rem'}}>
-      <Grid container spacing={2}>
-        <Grid item xs={12} lg={8} style={{display:'flex', flexDirection:'column',justifyContent:'space-between', alignItems:'space-between'}}>
+      <Box sx={{ flexGrow: 1 }} style={{marginTop:'1rem'}}>
+      <Grid container>
+        <Grid item xs={12} lg={8} style={{color:'#fff', padding:'1rem', backgroundColor:'#1565c0',display:'flex', flexDirection:'column',justifyContent:'space-between', alignItems:'space-between'}}>
         <p style={{textAlign:'justify',backgroundColor:''}}>
         The Nigerian Air Force Officers’ Wives Association is a philanthropic, Non-Governmental Organization
          whose membership is voluntary and open to the wives of all serving Nigerian Air Force officers.  Traditionally, the wife of the incumbent Chief 

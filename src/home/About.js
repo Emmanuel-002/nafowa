@@ -29,7 +29,7 @@ const About = () => {
     <Grid container spacing={2}>
     {about.map(item=>(
         <Grid item sm={12} lg={4}>
-        <Card  style={{marginTop:'20px', height:'100%', backgroundColor:'#1565c0',color:'#EA5C30',display:'flex',flexDirection:'column',justifyContent:'space-between',alignItems:'space-between'}}>
+        <Card className='about-card'  style={{marginTop:'20px', height:'100%', backgroundColor:'#1565c0',color:'#EA5C30',display:'flex',flexDirection:'column',justifyContent:'space-between',alignItems:'space-between'}}>
                <div>
                <h2 style={{textAlign:'center'}}>{item.title}</h2>
                 <div style={{textAlign:'center'}}>

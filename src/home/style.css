@@ -1,0 +1,56 @@
+.gallery {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .gallery img {
+    max-width: 150px;
+    height: 5rem;
+    padding: 0 15px;
+    object-fit: cover;
+  }
+  
+  .gallery img:last-of-type {
+    padding-left: 0;
+  }
+  
+  .inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 5rem;
+  }
+  
+  .wrapper {
+    position: absolute;
+    display: flex;
+  }
+  
+  section {
+    display: flex;
+    animation: swipe var(--speed) linear infinite backwards;
+  }
+
+  .image,
+  .service-card,
+  .about-card{
+    transition: all ease-in-out 1000ms;
+    cursor: pointer;
+  }
+  .image:hover{
+    transform: scale(1.12);
+  }
+  .about-card:hover,
+  .service-card:hover{
+    transform: rotateY(10deg);
+  }
+  @keyframes swipe {
+    0% {
+      transform: translate(0);
+    }
+  
+    100% {
+      transform: translate(-100%);
+    }
+  }
+  

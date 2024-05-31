@@ -4,6 +4,7 @@ import Banner from './Banner';
 import Services from './Services';
 import About from './About';
 import News from './News';
+import "./style.css";
 
 const Home = () => {
     return(
