@@ -1,25 +1,26 @@
 import * as React from 'react';
-import NavBar from './home/Appbar';
-import Footer from './home/Footer';
-import Banner from './home/Banner';
-import Services from './home/Services';
-import About from './home/About';
-import News from './home/News';
+import Home from './home/Home';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SubmitMessage from './SubmitMessage';
 
 function App() {
   return(
-    <>
-      <div style={{minHeight:'100vh',display:'flex',flexDirection:'column',justifyContent:'space-between'}}>
-      <div>
-      <NavBar />
-      <Banner />
-      <News />
-      <About />
-      <Services />
-      </div>
-      <Footer />
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/compliment" element={<SubmitMessage />} />
+{/* 
+        <Route path="/Adminlogin" element={<LoginPage role="Admin" />} />
+        <Route path="/Studentlogin" element={<LoginPage role="Student" />} />
+        <Route path="/Teacherlogin" element={<LoginPage role="Teacher" />} />
+        <Route path="/Parentlogin" element={<LoginPage role="Parent" />} />
+        <Route path="/Contactus" element={<ContactUs />} />
+
+        <Route path="/Adminregister" element={<AdminRegisterPage />} />
+
+        <Route path='/*' element={<ErrorPage />} /> */}
+      </Routes>
+    </Router>
   )
 }
 

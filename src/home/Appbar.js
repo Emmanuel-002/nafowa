@@ -11,9 +11,10 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import PersonIcon from '@mui/icons-material/Person';
 import logo from '../images/logo.jpeg'
 
-const pages = ['Services', 'News', 'About', 'Contact'];
+const pages = ['services', 'news', 'about', 'contact'];
 const settings = ['Login', 'Register'];  
 
 const NavBar = (props) => {
@@ -118,7 +119,7 @@ const NavBar = (props) => {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                <a href={`#${page}`} style={{textDecoration:'none',color:'#fff'}}>{page}</a>
               </Button>
             ))}
           </Box>
@@ -126,7 +127,7 @@ const NavBar = (props) => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar><PersonIcon/></Avatar>
               </IconButton>
             </Tooltip>
             <Menu
