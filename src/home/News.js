@@ -2,48 +2,49 @@ import { Container } from "@mui/material";
 import communitydev from '../images/communitydev.jpg'
 import education from '../images/education.jpg'
 import healthcare from '../images/healthcare.jpg'
+import { news } from "../utils/Db";
 import skillacquisition from '../images/skillacquisition.jpg'
+import { useParams, useNavigate } from "react-router-dom";
 
-const images = [
-  communitydev,
-  education,
-  healthcare,
-  skillacquisition,
-].map((image) => ({
-  id: crypto.randomUUID(),
-  image
-}));
   
   export default function News() {
+    const params = useParams()
+    const navigate = useNavigate()
+
+    const handleClick = (event) =>{
+      navigate(`/news`)
+    }
+
     return (
         <Container style={{marginTop:'1rem'}}>
-          <div className="gallery"> 
-       <div className="inner">
-      <div className="wrapper">
-        <section style={{ "--speed": `${5000}ms` }}>
-          {images.map(({ id, image }) => (
-            <div className="image" key={id}>
-              <img src={image} alt={id} />
+          <h2 style={{textAlign:'center'}}>Read News</h2>
+            <div className="gallery"> 
+              <div className="inner">
+              <div className="wrapper">
+                <section style={{ "--speed": `${5000}ms` }}>
+                  {news.map((item) => (
+                    <div className="image" key={item.id}>
+                      <img src={item.src} alt={item.id} onClick={handleClick} id={item.id} />
+                    </div>
+                  ))}
+                </section>
+                <section style={{ "--speed": `${5000}ms` }}>
+                  {news.map((item) => (
+                    <div className="image" key={item.id}>
+                      <img src={item.src} alt={item.id} onClick={handleClick} id={item.id} />
+                    </div>
+                  ))}
+                </section>
+                <section style={{ "--speed": `${5000}ms` }}>
+                  {news.map((item) => (
+                    <div className="image" key={item.id}>
+                      <img src={item.src} alt={item.id} onClick={handleClick} id={item.id} />
+                    </div>
+                  ))}
+                </section>
             </div>
-          ))}
-        </section>
-        <section style={{ "--speed": `${5000}ms` }}>
-          {images.map(({ id, image }) => (
-            <div className="image" key={id}>
-              <img src={image} alt={id} />
-            </div>
-          ))}
-        </section>
-        <section style={{ "--speed": `${5000}ms` }}>
-          {images.map(({ id, image }) => (
-            <div className="image" key={id}>
-              <img src={image} alt={id} />
-            </div>
-          ))}
-        </section>
-      </div>
-    </div>
-    </div>
+          </div>
+        </div>
       </Container>
     );
   }

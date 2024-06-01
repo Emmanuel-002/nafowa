@@ -13,11 +13,13 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import PersonIcon from '@mui/icons-material/Person';
 import logo from '../images/logo.jpeg'
+import { useNavigate } from 'react-router-dom';
 
 const pages = ['services', 'news', 'about', 'contact'];
 const settings = ['Login', 'Register'];  
 
 const NavBar = (props) => {
+    const navigate = useNavigate()
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
   
@@ -35,6 +37,11 @@ const NavBar = (props) => {
     const handleCloseUserMenu = () => {
       setAnchorElUser(null);
     };
+
+    const handleClick = (event) => {
+      navigate(`/${event.target.value}`)
+    }
+
     return (
       <AppBar style={{position:"sticky", top:0}}>
       <Container maxWidth="xl">
@@ -89,7 +96,7 @@ const NavBar = (props) => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center" onClick={()=>navigate(`/${page}`)}>{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -116,10 +123,10 @@ const NavBar = (props) => {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={()=>navigate(`/${page}`)}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                <a href={`#${page}`} style={{textDecoration:'none',color:'#fff'}}>{page}</a>
+                {page}
               </Button>
             ))}
           </Box>

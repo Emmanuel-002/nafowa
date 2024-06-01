@@ -1,5 +1,5 @@
 import NavBar from './Appbar';
-import Footer from './Footer';
+import Footer from '../Footer';
 import Banner from './Banner';
 import Services from './Services';
 import About from './About';

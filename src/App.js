@@ -1,14 +1,17 @@
 import * as React from 'react';
 import Home from './home/Home';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import SubmitMessage from './SubmitMessage';
+import NewsPage from './NewsPage';
+import './App.css'
 
 function App() {
   return(
     <Router>
       <Routes>
+        <Route path="*" element={<Home />} />
         <Route path="/" element={<Home />} />
-        <Route path="/compliment" element={<SubmitMessage />} />
+        <Route path="/news" element={<NewsPage />} />
+        {/* <Route path="/news/:*" element={<Home />} /> */}
 {/* 
         <Route path="/Adminlogin" element={<LoginPage role="Admin" />} />
         <Route path="/Studentlogin" element={<LoginPage role="Student" />} />
