@@ -29,7 +29,7 @@ function AllNewsPage() {
     const [currentItems, setCurrentItems] = useState([])
     const [pageCount, setPageCount] = useState(0)
     const [itemOffset, setItemOffset] = useState(0);
-    const itemsPerPage = 1
+    const itemsPerPage = 4
 
     useEffect(()=>{
         setSingleNews(news.find((item,index)=>index===0) || {})
