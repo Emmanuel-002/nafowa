@@ -42,16 +42,19 @@ const NavBar = (props) => {
       navigate(`/${event.target.value}`)
     }
 
+    const handleHome = () => {
+      navigate(`/`)
+    }
+
     return (
       <AppBar style={{position:"sticky", top:0}}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar disableGutters onClick={handleHome}>
             <img src={logo} width={'50px'} height={'50px'} style={{borderRadius:'50%'}} />
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -105,7 +108,7 @@ const NavBar = (props) => {
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },

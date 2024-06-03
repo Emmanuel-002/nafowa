@@ -3,6 +3,9 @@ import Home from './home/Home';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NewsPage from './NewsPage';
 import './App.css'
+import AboutPage from './AboutPage';
+import ServicesPage from './ServicesPage';
+import AllNewsPage from './AllNewsPage';
 
 function App() {
   return(
@@ -10,7 +13,9 @@ function App() {
       <Routes>
         <Route path="*" element={<Home />} />
         <Route path="/" element={<Home />} />
-        <Route path="/news" element={<NewsPage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/news" element={<AllNewsPage />} />
         {/* <Route path="/news/:*" element={<Home />} /> */}
 {/* 
         <Route path="/Adminlogin" element={<LoginPage role="Admin" />} />
