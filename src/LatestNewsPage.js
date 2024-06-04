@@ -36,7 +36,8 @@ function LatestNewsPage() {
   }
 
   return (
-    <>
+    <div style={{minHeight:'100vh',display:'flex',flexDirection:'column',justifyContent:'space-between'}}>
+        <div>
     <NavBar />
     <Container style={{marginTop:'1rem'}}>
         <Grid container spacing={1} >
@@ -104,8 +105,9 @@ function LatestNewsPage() {
                 </Grid>
             </Grid>
     </Container>
+    </div>
     <Footer />
-    </>
+    </div>
   );
 }
 

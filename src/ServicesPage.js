@@ -1,11 +1,17 @@
+import Footer from "./Footer"
+import NavBar from "./home/Appbar"
 
 
-const ServicesPage = () => {
+const AboutPage = () => {
     return(
-        <>
-            Services Page
-        </>
+        <div style={{minHeight:'100vh',display:'flex',flexDirection:'column',justifyContent:'space-between'}}>
+        <div>
+    <NavBar />
+    <div>Services</div>
+    </div>
+    <Footer />
+    </div>
     )
 }
 
-export default ServicesPage
+export default AboutPage

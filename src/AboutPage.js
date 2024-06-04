@@ -1,10 +1,16 @@
+import Footer from "./Footer"
+import NavBar from "./home/Appbar"
 
 
 const AboutPage = () => {
     return(
-        <>
-            About Page
-        </>
+        <div style={{minHeight:'100vh',display:'flex',flexDirection:'column',justifyContent:'space-between'}}>
+        <div>
+    <NavBar />
+    <div>About</div>
+    </div>
+    <Footer />
+    </div>
     )
 }
 
