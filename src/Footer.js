@@ -40,12 +40,12 @@ const Footer = () => {
             <a target='_blank' href='tel:08060515523:' style={{textDecoration:'none',color:'#1565c0',padding:'10px'}}><PhoneIcon /> +234-908-859-6289</a><br/>
             <a target='_blank' href="mailto:nafowasec_abuja@yahoo.com" style={{textDecoration:'none',color:'#1565c0',padding:'10px'}}> <MailIcon /> office@nafowa.org</a><br/>
             </div>
-            <h2>Quick Links</h2>
+            {/* <h2>Quick Links</h2>
             <div>
             <a href={`#services`} style={{textDecoration:'none',color:'#1565c0'}}>Services</a><br />
             <a href={`#news`} style={{textDecoration:'none',color:'#1565c0'}}>News</a><br/>
             <a href={`#about`} style={{textDecoration:'none',color:'#1565c0'}}>About</a>
-            </div>
+            </div> */}
         </Grid>
         <Grid item xs={12} md={6} lg={4} style={{textAlign:'center',padding:'10px'}}>
         <form action="https://public.herotofu.com/v1/ab6ca490-1d5e-11ef-90b8-b52fc5a15495" method="post" accept-charset="UTF-8">

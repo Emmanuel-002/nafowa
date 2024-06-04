@@ -14,6 +14,7 @@
   align-items: center;
   margin-bottom: 5rem;
   font-size: 1.2rem;
+  width: 100%;
 }
 .pagination .page-num{
   padding: 8px;
@@ -25,7 +26,13 @@
   background-color: #000;
   color: #fff;
 }
+.pagination .active{
+  color: #1565c0;
+  font-weight: bold;
+  text-decoration: underline;
+}
 .pagination .page-num:active{
-  background-color: #000;
-  color: #fff;
+  color: #1565c0;
+  font-weight: bold;
+  text-decoration: underline;
 }

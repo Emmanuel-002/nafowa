@@ -1,14 +1,22 @@
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import FlagCircleIcon from '@mui/icons-material/FlagCircle';
 import JoinInnerIcon from '@mui/icons-material/JoinInner';
+import awardpresentation from '../images/award-presentation.jpg'
+import cancerawareness from '../images/cancerawareness.jpg'
+import cassAddress from '../images/CAS-address.jpg'
+import conference from '../images/conference.jpg'
+import culturalday from '../images/culturalday.jpg'
+import depowa from '../images/depowa.jpg'
+import humanitarian from '../images/humanitarian.jpg'
+import nafowavisittocdswife from '../images/nafowavisittocdswife.jpg'
+import presentationofgift from '../images/presentationofgift.jpg'
+import sendforth from '../images/sendforth.jpg'
+import walkatonsenatecommittee from '../images/walkatonsenatecommittee.jpg'
+import walkjog from '../images/walkjog.jpg'
 import education from '../images/education.jpg'
-import healthcare from '../images/healthcare.jpg'
 import skillacquisition from '../images/skillacquisition.jpg'
 import communitydev from '../images/communitydev.jpg'
-
-import banner1 from '../images/banner1.jpg'
-import banner2 from '../images/banner2.jpg'
-import banner3 from '../images/banner3.jpg'
+import healthcare from '../images/communitydev.jpg'
 // import Carousel from 'react-material-ui-carousel';
 
 export const about = [
@@ -63,10 +71,10 @@ export const services = [
 
 export const news = [
     {   
-        id:'1',
-        title:'News 1',
-        src: banner1,
-        alt: "Banner 1",
+        id:'202406010',
+        title:'Award Presentation',
+        src: awardpresentation,
+        alt: "Award Presentation",
         description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut facilis quisquam fugiat similique saepe aperiam neque dolorem 
         odio asperiores exercitationem velit, nihil commodi, molestias provident eligendi reiciendis eum! Rerum dolorem ipsum animi libero tempore, 
         similique ab sapiente repellendus explicabo possimus! Molestias rem tempore necessitatibus sed, quos illum quod quidem, velit vero doloremque, 
@@ -74,10 +82,10 @@ export const news = [
         `
     },
     {   
-        id:'2',
-        title:'News 2',
-        src: banner2,
-        alt: "Banner 2",
+        id:'202406011',
+        title:'Cancer Awareness',
+        src: cancerawareness,
+        alt: "Cancer Awareness",
         description: `assumenda eligendi? Libero quisquam dolores expedita! Harum, eligendi sit labore saepe earum consequatur adipisci ex eaque neque ratione modi 
         odio porro aliquid non numquam est, dolorem dolores molestias vero quod hic consequuntur odit. Non totam voluptatem temporibus doloremque ipsam 
         quibusdam voluptatibus. Ab illo, consectetur distinctio vel temporibus quaerat ipsum quis fugiat debitis adipisci incidunt aperiam, est 
@@ -86,10 +94,10 @@ export const news = [
     },
 
     {
-        id:'3',
-        title:'News 3',
-        src: banner3,
-        alt: "Banner 3",
+        id:'202406012',
+        title:'CAS Address',
+        src: cassAddress,
+        alt: "CAS Address",
         description: ` harum inventore et, illum deserunt eum dolorem voluptate molestiae maxime nostrum? Culpa eius placeat tempora vel facere cupiditate alias 
         dolore blanditiis nobis, dignissimos voluptas rem, quia, quaerat neque animi aspernatur? Numquam, nostrum quam? Quia autem exercitationem 
         porro sunt facere optio odio, dolorem repellendus qui vitae alias dignissimos, fugiat asperiores temporibus repellat quisquam dolore quae! 
@@ -99,10 +107,10 @@ export const news = [
     },
 
     {
-        id:'4',
-        title:'News 4',
-        src: banner3,
-        alt: "Banner 4",
+        id:'202406013',
+        title:'NAFOWA Conference',
+        src: conference,
+        alt: "NAFOWA Conference",
         description: ` harum inventore et, illum deserunt eum dolorem voluptate molestiae maxime nostrum? Culpa eius placeat tempora vel facere cupiditate alias 
         dolore blanditiis nobis, dignissimos voluptas rem, quia, quaerat neque animi aspernatur? Numquam, nostrum quam? Quia autem exercitationem 
         porro sunt facere optio odio, dolorem repellendus qui vitae alias dignissimos, fugiat asperiores temporibus repellat quisquam dolore quae! 
@@ -112,10 +120,10 @@ export const news = [
     },
 
     {   
-        id:'5',
-        title:'News 5',
-        src: banner2,
-        alt: "Banner 5",
+        id:'202406014',
+        title:'Cultural Day',
+        src: culturalday,
+        alt: "Cultural Day",
         description: `assumenda eligendi? Libero quisquam dolores expedita! Harum, eligendi sit labore saepe earum consequatur adipisci ex eaque neque ratione modi 
         odio porro aliquid non numquam est, dolorem dolores molestias vero quod hic consequuntur odit. Non totam voluptatem temporibus doloremque ipsam 
         quibusdam voluptatibus. Ab illo, consectetur distinctio vel temporibus quaerat ipsum quis fugiat debitis adipisci incidunt aperiam, est 
@@ -123,10 +131,10 @@ export const news = [
         `
     },
     {   
-        id:'6',
-        title:'News 6',
-        src: banner2,
-        alt: "Banner 6",
+        id:'202406015',
+        title:'DEPOWA',
+        src: depowa,
+        alt: "DEPOWA",
         description: `assumenda eligendi? Libero quisquam dolores expedita! Harum, eligendi sit labore saepe earum consequatur adipisci ex eaque neque ratione modi 
         odio porro aliquid non numquam est, dolorem dolores molestias vero quod hic consequuntur odit. Non totam voluptatem temporibus doloremque ipsam 
         quibusdam voluptatibus. Ab illo, consectetur distinctio vel temporibus quaerat ipsum quis fugiat debitis adipisci incidunt aperiam, est 
@@ -134,10 +142,10 @@ export const news = [
         `
     },
     {   
-        id:'7',
-        title:'News 7',
-        src: banner2,
-        alt: "Banner 7",
+        id:'202406016',
+        title:'Humanitarian Porgramme',
+        src: humanitarian,
+        alt: "Humanitarian",
         description: `assumenda eligendi? Libero quisquam dolores expedita! Harum, eligendi sit labore saepe earum consequatur adipisci ex eaque neque ratione modi 
         odio porro aliquid non numquam est, dolorem dolores molestias vero quod hic consequuntur odit. Non totam voluptatem temporibus doloremque ipsam 
         quibusdam voluptatibus. Ab illo, consectetur distinctio vel temporibus quaerat ipsum quis fugiat debitis adipisci incidunt aperiam, est 
@@ -145,10 +153,10 @@ export const news = [
         `
     },
     {   
-        id:'8',
-        title:'News 8',
-        src: banner2,
-        alt: "Banner 8",
+        id:'202406017',
+        title:'NAFOWA Visits CDS Wife',
+        src: nafowavisittocdswife,
+        alt: "NAFOWA Visits CDS Wife",
         description: `assumenda eligendi? Libero quisquam dolores expedita! Harum, eligendi sit labore saepe earum consequatur adipisci ex eaque neque ratione modi 
         odio porro aliquid non numquam est, dolorem dolores molestias vero quod hic consequuntur odit. Non totam voluptatem temporibus doloremque ipsam 
         quibusdam voluptatibus. Ab illo, consectetur distinctio vel temporibus quaerat ipsum quis fugiat debitis adipisci incidunt aperiam, est 
@@ -156,10 +164,10 @@ export const news = [
         `
     },
     {   
-        id:'9',
-        title:'News 5',
-        src: banner2,
-        alt: "Banner 5",
+        id:'202406018',
+        title:'Presentation of Gift',
+        src: presentationofgift,
+        alt: "Presentation of Gift",
         description: `assumenda eligendi? Libero quisquam dolores expedita! Harum, eligendi sit labore saepe earum consequatur adipisci ex eaque neque ratione modi 
         odio porro aliquid non numquam est, dolorem dolores molestias vero quod hic consequuntur odit. Non totam voluptatem temporibus doloremque ipsam 
         quibusdam voluptatibus. Ab illo, consectetur distinctio vel temporibus quaerat ipsum quis fugiat debitis adipisci incidunt aperiam, est 
@@ -167,10 +175,32 @@ export const news = [
         `
     },
     {   
-        id:'10',
-        title:'News 5',
-        src: banner2,
-        alt: "Banner 5",
+        id:'202406019',
+        title:'Send Forth',
+        src: sendforth,
+        alt: "Send Forth",
+        description: `assumenda eligendi? Libero quisquam dolores expedita! Harum, eligendi sit labore saepe earum consequatur adipisci ex eaque neque ratione modi 
+        odio porro aliquid non numquam est, dolorem dolores molestias vero quod hic consequuntur odit. Non totam voluptatem temporibus doloremque ipsam 
+        quibusdam voluptatibus. Ab illo, consectetur distinctio vel temporibus quaerat ipsum quis fugiat debitis adipisci incidunt aperiam, est 
+        accusantium aspernatur voluptatibus fugit reprehenderit voluptate laudantium rem veritatis! Alias, doloribus itaque optio odio corrupti,
+        `
+    },
+    {   
+        id:'202406020',
+        title:'Walkaton Senate Committee',
+        src: walkatonsenatecommittee,
+        alt: "Walkaton Senate Committee",
+        description: `assumenda eligendi? Libero quisquam dolores expedita! Harum, eligendi sit labore saepe earum consequatur adipisci ex eaque neque ratione modi 
+        odio porro aliquid non numquam est, dolorem dolores molestias vero quod hic consequuntur odit. Non totam voluptatem temporibus doloremque ipsam 
+        quibusdam voluptatibus. Ab illo, consectetur distinctio vel temporibus quaerat ipsum quis fugiat debitis adipisci incidunt aperiam, est 
+        accusantium aspernatur voluptatibus fugit reprehenderit voluptate laudantium rem veritatis! Alias, doloribus itaque optio odio corrupti,
+        `
+    },
+    {   
+        id:'202406021',
+        title:'Walk Jog',
+        src: walkjog,
+        alt: "Walk Jog",
         description: `assumenda eligendi? Libero quisquam dolores expedita! Harum, eligendi sit labore saepe earum consequatur adipisci ex eaque neque ratione modi 
         odio porro aliquid non numquam est, dolorem dolores molestias vero quod hic consequuntur odit. Non totam voluptatem temporibus doloremque ipsam 
         quibusdam voluptatibus. Ab illo, consectetur distinctio vel temporibus quaerat ipsum quis fugiat debitis adipisci incidunt aperiam, est 

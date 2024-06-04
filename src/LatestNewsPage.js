@@ -6,19 +6,19 @@ import { news } from './utils/Db';
 import NavBar from './home/Appbar';
 import Footer from './Footer';
 
-function AllNewsPage() {
+function LatestNewsPage() {
     const navigate = useNavigate()
     const params = useParams()
-    const [singleNews, setSingleNews] = useState(news.find((item,index)=>index===0) || {})
-    const [otherNews, setOtherNews] = useState(news.filter((item,index)=>index>0) || [])
+    const [singleNews, setSingleNews] = useState(news.find((item,index)=>item.id===params.id) || {})
+    const [otherNews, setOtherNews] = useState(news.filter((item,index)=>item.id!==params.id) || [])
     const [currentItems, setCurrentItems] = useState([])
     const [pageCount, setPageCount] = useState(0)
     const [itemOffset, setItemOffset] = useState(0);
     const itemsPerPage = 3
 
     useEffect(()=>{
-        setSingleNews(news.find((item,index)=>index===0) || {})
-        setOtherNews(news.filter((item,index)=>index>0) || [])
+        setSingleNews(news.find((item,index)=>item.id===params.id) || {})
+        setOtherNews(news.filter((item,index)=>item.id!==params.id) || [])
     },[params.id])
 
     useEffect(()=>{
@@ -32,8 +32,7 @@ function AllNewsPage() {
     setItemOffset(newOffset);
   };
   const handleClick = (event) =>{
-    setSingleNews(news.find(item=>item.id===event.target.id)||{})
-    setOtherNews(news.filter(item=>item.id!==event.target.id)||[])
+    navigate(`/news/${event.target.id}`)
   }
 
   return (
@@ -110,4 +109,4 @@ function AllNewsPage() {
   );
 }
 
-export default AllNewsPage
+export default LatestNewsPage

@@ -12,30 +12,30 @@ import { useParams, useNavigate } from "react-router-dom";
     const navigate = useNavigate()
 
     const handleClick = (event) =>{
-      navigate(`/news`)
+      navigate(`/news/${event.target.id}`)
     }
 
     return (
         <Container style={{marginTop:'1rem'}}>
-          <h2 style={{textAlign:'center'}}>Read News</h2>
+          <h2 style={{textAlign:'center'}}>Latest News</h2>
             <div className="gallery"> 
               <div className="inner">
               <div className="wrapper">
-                <section style={{ "--speed": `${5000}ms` }}>
+                <section style={{ "--speed": `${10000}ms` }}>
                   {news.map((item) => (
                     <div className="image" key={item.id}>
                       <img src={item.src} alt={item.id} onClick={handleClick} id={item.id} />
                     </div>
                   ))}
                 </section>
-                <section style={{ "--speed": `${5000}ms` }}>
+                <section style={{ "--speed": `${10000}ms` }}>
                   {news.map((item) => (
                     <div className="image" key={item.id}>
                       <img src={item.src} alt={item.id} onClick={handleClick} id={item.id} />
                     </div>
                   ))}
                 </section>
-                <section style={{ "--speed": `${5000}ms` }}>
+                <section style={{ "--speed": `${10000}ms` }}>
                   {news.map((item) => (
                     <div className="image" key={item.id}>
                       <img src={item.src} alt={item.id} onClick={handleClick} id={item.id} />

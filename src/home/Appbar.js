@@ -50,7 +50,7 @@ const NavBar = (props) => {
       <AppBar style={{position:"sticky", top:0}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters onClick={handleHome}>
-            <img src={logo} width={'50px'} height={'50px'} style={{borderRadius:'50%'}} />
+            <img src={logo} width={'50px'} height={'50px'} style={{borderRadius:'50%', cursor:'pointer'}} />
           <Typography
             variant="h6"
             noWrap
