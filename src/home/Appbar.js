@@ -15,7 +15,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import logo from '../images/logo.jpeg'
 import { useNavigate } from 'react-router-dom';
 
-const pages = ['services', 'news', 'about', 'contact'];
+const pages = ['services', 'news', 'about'];
 const settings = ['Login', 'Register'];  
 
 const NavBar = (props) => {
@@ -49,8 +49,8 @@ const NavBar = (props) => {
     return (
       <AppBar style={{position:"sticky", top:0}}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters onClick={handleHome}>
-            <img src={logo} width={'50px'} height={'50px'} style={{borderRadius:'50%', cursor:'pointer'}} />
+        <Toolbar disableGutters>
+            <img src={logo} width={'50px'} height={'50px'} style={{borderRadius:'50%', cursor:'pointer'}} onClick={handleHome} />
           <Typography
             variant="h6"
             noWrap
