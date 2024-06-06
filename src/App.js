@@ -18,6 +18,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/news" element={<AllNewsPage />} />
         <Route path="/news/:id" element={<LatestNewsPage />} />
+
 {/* 
         <Route path="/Adminlogin" element={<LoginPage role="Admin" />} />
         <Route path="/Studentlogin" element={<LoginPage role="Student" />} />

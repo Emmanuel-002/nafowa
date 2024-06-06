@@ -9,7 +9,7 @@ const About = () => {
   }
 
     return(
-        <Container>
+        <Container maxWidth='xl'>
           <h2 style={{textAlign:'center'}}>About Us</h2>
     <Grid container spacing={2}>
     {about.map(item=>(
