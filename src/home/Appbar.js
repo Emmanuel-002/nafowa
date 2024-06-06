@@ -13,11 +13,13 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import PersonIcon from '@mui/icons-material/Person';
 import logo from '../images/logo.jpeg'
+import { useNavigate } from 'react-router-dom';
 
-const pages = ['services', 'news', 'about', 'contact'];
+const pages = ['services', 'news', 'about'];
 const settings = ['Login', 'Register'];  
 
 const NavBar = (props) => {
+    const navigate = useNavigate()
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
   
@@ -35,16 +37,24 @@ const NavBar = (props) => {
     const handleCloseUserMenu = () => {
       setAnchorElUser(null);
     };
+
+    const handleClick = (event) => {
+      navigate(`/${event.target.value}`)
+    }
+
+    const handleHome = () => {
+      navigate(`/`)
+    }
+
     return (
       <AppBar style={{position:"sticky", top:0}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-            <img src={logo} width={'50px'} height={'50px'} style={{borderRadius:'50%'}} />
+            <img src={logo} width={'50px'} height={'50px'} style={{borderRadius:'50%', cursor:'pointer'}} onClick={handleHome} />
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -89,7 +99,7 @@ const NavBar = (props) => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center" onClick={()=>navigate(`/${page}`)}>{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -98,7 +108,7 @@ const NavBar = (props) => {
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -116,10 +126,10 @@ const NavBar = (props) => {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={()=>navigate(`/${page}`)}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                <a href={`#${page}`} style={{textDecoration:'none',color:'#fff'}}>{page}</a>
+                {page}
               </Button>
             ))}
           </Box>
