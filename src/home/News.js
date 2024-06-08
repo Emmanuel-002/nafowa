@@ -62,7 +62,6 @@ import 'swiper/css/scrollbar';
                     style={{backgroundSize:'contain'}}
                   />
                   </Card>
-              {/* <img src={item.src} alt={item.id} onClick={handleClick} id={item.id} /> */}
         </div>
           </SwiperSlide>
        ))}

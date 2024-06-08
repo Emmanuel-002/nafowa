@@ -1,7 +1,7 @@
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Footer from "./Footer"
-import NavBar from "./home/Appbar"
+import Footer from "./components/Footer"
+import NavBar from "./components/NavBar"
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';

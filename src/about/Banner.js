@@ -28,7 +28,7 @@ function Banner() {
   };
 
   return (
-    <Container id='#'>
+    <Container maxWidth='xl' id='#'>
       <Box sx={{ flexGrow: 1 }} style={{marginTop:'1rem'}}>
       <Grid container>
         <Grid item xs={12} lg={8} style={{color:'#fff', padding:'1rem', backgroundColor:'#1565c0',display:'flex', flexDirection:'column',justifyContent:'space-between', alignItems:'space-between'}}>
@@ -38,7 +38,9 @@ function Banner() {
          of the Air Staff is the National President of the Association, while the Headquarters of the Association is located in Abuja.  NAFOWA is also 
          very active at all Air Force Command levels and in various Air Force formations throughout the country.  The Association was established in 1968 
          with the primary objective of promoting the socio-cultural and educational well-being of the wider air force community and the general public 
-         especially the less-privileged.  
+         especially the less-privileged. The Association started as an informal Tea Party organized to exchange pleasantries and subsequently became a regular meeting with the idea of 
+         extending assistance to the sick and the needy and empowering women and the youth. In 1968, it was formally established as a legal entity known 
+         as the “Nigerian Air Force Officers’ Wives Association” (NAFOWA).
         </p>          
         </Grid>
         <Grid item xs={12} lg={4}>
@@ -47,7 +49,8 @@ function Banner() {
               component="img"
               height="300"
               image={presidentImage}
-              alt="Paella dish"
+              alt="President"
+              style={{backgroundSize:'cover'}}
             />
             </Card>
         </Grid>

@@ -14,6 +14,8 @@ import MenuItem from '@mui/material/MenuItem';
 import PersonIcon from '@mui/icons-material/Person';
 import logo from '../images/logo.jpeg'
 import { useNavigate } from 'react-router-dom';
+import OptionButton from './AboutButton';
+import AboutButton from './AboutButton';
 
 const pages = ['services', 'news', 'about'];
 const settings = ['Login', 'Register'];  
@@ -102,6 +104,7 @@ const NavBar = (props) => {
                   <Typography textAlign="center" onClick={()=>navigate(`/${page}`)}>{page}</Typography>
                 </MenuItem>
               ))}
+            {/* <AboutButton /> */}
             </Menu>
           </Box>
           <Typography
@@ -132,10 +135,11 @@ const NavBar = (props) => {
                 {page}
               </Button>
             ))}
+            {/* <AboutButton /> */}
           </Box>
   
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
+            <Tooltip title="Acount">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar><PersonIcon/></Avatar>
               </IconButton>

@@ -14,8 +14,9 @@ import 'swiper/css/scrollbar';
 
 const Services = () => {
   const navigate = useNavigate()
-  const handleServices = () => {
-    navigate(`/services`)
+  const handleServices = (event) => {
+    console.log(event.target.id)
+    navigate(`/services/${event.target.id}`)
   }
    return(
     <Container maxWidth="xl" id='services' style={{marginTop:'50px'}}>
@@ -44,9 +45,10 @@ const Services = () => {
       autoplay={true}
     >
       {services.map(service=>(
-              <SwiperSlide key={service.index}>
+              <SwiperSlide key={service.id}>
                 <Card onClick={handleServices} className='service-card'  style={{margin:'10px 0',height:'100%'}}>
                   <CardMedia
+                  id={service.id}
                     component="img"
                     height="300"
                     image={service.src}

@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import ReactPaginate from 'react-paginate';
 import { Container, Grid, Card, CardMedia, CardContent, Typography } from '@mui/material';
-import { news } from './utils/Db';
-import NavBar from './home/Appbar';
-import Footer from './Footer';
+import { news } from '../utils/Db';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 function AllNewsPage() {
     const navigate = useNavigate()

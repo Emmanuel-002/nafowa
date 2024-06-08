@@ -1,5 +1,5 @@
-import Footer from "./Footer"
-import NavBar from "./home/Appbar"
+import Footer from "./components/Footer"
+import NavBar from "./components/NavBar"
 
 
 const AboutPage = () => {

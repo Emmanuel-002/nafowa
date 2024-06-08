@@ -1,5 +1,5 @@
-import NavBar from './Appbar';
-import Footer from '../Footer';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 import Services from './Services';
 import About from './About';
 import News from './News';

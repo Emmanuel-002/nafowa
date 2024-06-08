@@ -1,0 +1,23 @@
+.card{
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    position: relative;
+}
+
+.front{
+    backface-visibility: hidden;
+    height: 350px;
+}
+
+.back{
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    height: 350px;
+}
+
+#cardFlip{
+    transform: rotateY(180deg);
+}

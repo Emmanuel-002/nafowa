@@ -1,12 +1,11 @@
 import * as React from 'react';
-import Home from './home/Home';
+import Home from './home/HomePage';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import NewsPage from './NewsPage';
 import './App.css'
-import AboutPage from './AboutPage';
-import ServicesPage from './ServicesPage';
-import AllNewsPage from './AllNewsPage';
-import LatestNewsPage from './LatestNewsPage';
+import AboutPage from './about/AboutPage';
+import ServicesPage from './services/ServicesPage';
+import AllNewsPage from './news/AllNewsPage';
+import LatestNewsPage from './news/LatestNewsPage';
 
 function App() {
   return(
@@ -14,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/*" element={<Home />} />
-        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/services/:id" element={<ServicesPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/news" element={<AllNewsPage />} />
         <Route path="/news/:id" element={<LatestNewsPage />} />
