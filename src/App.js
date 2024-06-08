@@ -3,9 +3,10 @@ import Home from './home/HomePage';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css'
 import AboutPage from './about/AboutPage';
-import ServicesPage from './services/ServicesPage';
 import AllNewsPage from './news/AllNewsPage';
 import LatestNewsPage from './news/LatestNewsPage';
+import AllServicesPage from './services/AllServicesPage';
+import SingleServicesPage from './services/SingleServicesPage';
 
 function App() {
   return(
@@ -13,7 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/*" element={<Home />} />
-        <Route path="/services/:id" element={<ServicesPage />} />
+        <Route path="/services" element={<AllServicesPage />} />
+        <Route path="/services/:id" element={<SingleServicesPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/news" element={<AllNewsPage />} />
         <Route path="/news/:id" element={<LatestNewsPage />} />

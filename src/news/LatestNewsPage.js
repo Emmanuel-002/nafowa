@@ -70,7 +70,7 @@ function LatestNewsPage() {
                 <Grid className='also-read' item container sm={12} md={4} lg={4}>
                 <p style={{textAlign:'center',fontWeight:'bold', color:'#fff', backgroundColor:"#EA5C30", margin:'0', padding:'0.3rem', width:'100%'}}>Also read</p>
                     {currentItems.map(item=>(
-                        <Card style={{width:'100%'}}>
+                        <Card style={{width:'100%', marginBottom:'1rem'}}>
                         <CardMedia
                             sx={{ height: 140, width:'100%' }}
                             image={item.src}

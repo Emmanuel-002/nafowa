@@ -5,20 +5,21 @@ import { Container, Grid, Card, CardMedia, CardContent, Typography } from '@mui/
 import { services } from '../utils/Db';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
+import ScrollToTop from '../ScrollToTop';
 
-function ServicesPage() {
+function AllServicesPage() {
     const navigate = useNavigate()
     const params = useParams()
-    const [singleService, setSingleService] = useState(services.find((item,index)=>item.id===params.id) || {})
-    const [otherServices, setOtherServices] = useState(services.filter((item,index)=>item.id!==params.id) || [])
+    const [singleService, setSingleService] = useState(services.find((item,index)=>index===0) || {})
+    const [otherServices, setOtherServices] = useState(services.filter((item,index)=>index>0) || [])
     const [currentItems, setCurrentItems] = useState([])
     const [pageCount, setPageCount] = useState(0)
     const [itemOffset, setItemOffset] = useState(0);
     const itemsPerPage = 3
 
     useEffect(()=>{
-        setSingleService(services.find((item,index)=>item.id===params.id) || {})
-        setOtherServices(services.filter((item,index)=>item.id!==params.id) || [])
+        setSingleService(services.find((item,index)=>index===0) || {})
+        setOtherServices(services.filter((item,index)=>index>0) || [])
     },[params.id])
 
     useEffect(()=>{
@@ -32,7 +33,8 @@ function ServicesPage() {
     setItemOffset(newOffset);
   };
   const handleClick = (event) =>{
-    navigate(`/services/${event.target.id}`)
+    setSingleService(services.find(item=>item.id===event.target.id)||{})
+    setOtherServices(services.filter(item=>item.id!==event.target.id)||[])
   }
 
   return (
@@ -111,4 +113,4 @@ function ServicesPage() {
   );
 }
 
-export default ServicesPage
+export default AllServicesPage
