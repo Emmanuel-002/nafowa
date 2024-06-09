@@ -4,8 +4,8 @@ import React from 'react'
 function Objectives() {
   return (
     <Container maxWidth='xl' style={{marginTop:'1rem'}}>
-        <Typography variant='h4'><span style={{backgroundColor:'#EA5C30', padding:'5px', borderRadius:'5px', color:'#fff'}}>Goal and Objectives </span></Typography>
         <Card style={{padding:'5px'}}>
+        <Typography variant='h5'>Goals and Objectives</Typography>
         <Typography sx={{marginTop:'0.5rem'}}>
         <p><strong>Goal</strong>:   Giving hope and meaningful life to Women, children and youth.</p>
         <p><strong>Objectives</strong>:</p>

@@ -4,8 +4,8 @@ import React from 'react'
 function Achievements() {
   return (
     <Container maxWidth='xl' style={{marginTop:'1rem'}}>
-        <Typography variant='h4'><span style={{backgroundColor:'#EA5C30', padding:'5px', borderRadius:'5px', color:'#fff'}}>Achievements</span></Typography>
         <Card style={{padding:'5px'}}>
+        <Typography variant='h5'>Achievements</Typography>
         <Typography sx={{marginTop:'0.5rem'}}>
         NAFOWA has embarked specifically on activities that promote the welfare of the “Air Force Family” and the public in general.
         The Association has reached out to the less fortunate and less privileged members of the society.  Notable among NAFOWA activities are:
