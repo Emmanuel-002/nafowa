@@ -3,13 +3,13 @@
     text-align: center;
   }
   
-  .gallery img {
+  /* img {
     max-width: 150px;
     height: 5rem;
     padding: 0 15px;
     object-fit: cover;
   }
-  
+   */
   .gallery img:last-of-type {
     padding-left: 0;
   }

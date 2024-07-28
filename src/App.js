@@ -1,12 +1,12 @@
 import * as React from 'react';
-import Home from './home/Home';
+import Home from './home/HomePage';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import NewsPage from './NewsPage';
 import './App.css'
-import AboutPage from './AboutPage';
-import ServicesPage from './ServicesPage';
-import AllNewsPage from './AllNewsPage';
-import LatestNewsPage from './LatestNewsPage';
+import AboutPage from './about/AboutPage';
+import AllNewsPage from './news/AllNewsPage';
+import LatestNewsPage from './news/LatestNewsPage';
+import AllServicesPage from './services/AllServicesPage';
+import SingleServicesPage from './services/SingleServicesPage';
 
 function App() {
   return(
@@ -14,10 +14,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/*" element={<Home />} />
-        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/services" element={<AllServicesPage />} />
+        <Route path="/services/:id" element={<SingleServicesPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/news" element={<AllNewsPage />} />
         <Route path="/news/:id" element={<LatestNewsPage />} />
+
 {/* 
         <Route path="/Adminlogin" element={<LoginPage role="Admin" />} />
         <Route path="/Studentlogin" element={<LoginPage role="Student" />} />

@@ -17,7 +17,14 @@ import education from '../images/education.jpg'
 import skillacquisition from '../images/skillacquisition.jpg'
 import communitydev from '../images/communitydev.jpg'
 import healthcare from '../images/communitydev.jpg'
-// import Carousel from 'react-material-ui-carousel';
+import VicePresident from '../images/vice-president.png'
+import NationalSecretary from '../images/national-secretary.png'
+import AssistantNationalSecretary from '../images/assistant-national-secretary.png'
+import HeadOfProgramme from '../images/head-of-programme.png'
+import PublicRelationOfficer from '../images/public-relation-officer.png'
+import HeadOfFinance from '../images/head-of-finance.png'
+import HeadOfEntertainment from '../images/head-of-entertainment.png'
+import HeadOfSocialWelfare from '../images/head-of-social.png'
 
 export const about = [
     {   
@@ -38,15 +45,108 @@ export const about = [
     },
 ]
 
+export const executives = [
+    {
+        pos:1,
+        id:'president',
+        name:'',
+        appointment:'President',
+        image: '',
+        about:'',
+        email:'',
+        phone:''
+    },
+    {
+        pos:2,
+        id:'vice-president',
+        name:'Dr (Mrs) Ibiyemi Olatunde',
+        appointment:'Vice President',
+        image: VicePresident,
+        about:'Dr (Mrs) Ibiyemi Olatunde hails from Osun State and she is currently the NAFOWA National Vice President. Mrs Olatunde holds a BSc (Hons), in Microbiology, MSc CPEB, PGDE and PhD in Microbiology. Her hobbies include reading and cooking.',
+        email:'bukkyolatunde@gmail.com',
+        phone:'08026635206'
+    },
+    {
+        pos:3,
+        id:'national-secretary',
+        name:'Mrs Hussaina Umar',
+        appointment:'National Secretary',
+        image: NationalSecretary,
+        about:'Mrs Hussaina Umar hails from Edo State and she is currently the NAFOWA National Secretary. Mrs Umar holds a BSc in Political Science. Her hobbies include exploring and interior decoration',
+        email:'hussainasalihu2005@gmail.com',
+        phone:'08022325952'
+    },
+    {
+        pos:4,
+        id:'assistant-national-secretary',
+        name:'Mrs Yasmeen MK Usman',
+        appointment:'Assistant National Secretary',
+        image: AssistantNationalSecretary,
+        about:'Mrs Yasmeen MK Usman hails from Kaduna State and she is currently the NAFOWA National Assistant Secretary. Mrs MK Usman holds a HND in Health Information Technology and Master Diploma in Counseling and Coaching (MDCC). Her hobby is cooking.  She can be contacted via ',
+        email:'jaszabdul5@gmail.com',
+        phone:'08065510402'
+    },
+    {
+        pos:5,
+        id:'head-of-programme',
+        name:'Mrs Fatima Adisa',
+        appointment:'Head of Programme',
+        image: HeadOfProgramme,
+        about:'Mrs Fatima Adisa hails from Kaduna State and she is currently the NAFOWA National Head of Programme. Mrs Adisa holds an OND Personnel Management, HND Marketing and PGD Education. Her hobbies include Reading Quran and making friends.',
+        email:'fateemer2002gmail.com',
+        phone:'08035999136'
+    },
+    {
+        pos:6,
+        id:'public-relation-officer',
+        name:'Mrs Michelle Akins',
+        appointment:'Public Relation Officer',
+        image:PublicRelationOfficer,
+        about:'Mrs Michelle Akins hails from Kogi State and she is currently the NAFOWA National PRO. Mrs Akins holds a Bachelor of Arts French Language, B1 Level CEFR (France) and OND in Accounting. Her hobbies include traveling and interior decoration.',
+        email:'michyife@yahoo.com',
+        phone:'08033723746'
+    },
+    {
+        pos:7,
+        id:'financial-secretary',
+        name:'Mrs Ifeoma Anyadike',
+        appointment:'Financial Secretary',
+        image:HeadOfFinance,
+        about:'Mrs Ifeoma Anyadike hails from Imo State and she is currently the NAFOWA National Financial Secretary. Mrs Anyadike holds a BSc Marketing from University of Nigeria Nsukka. Her hobby is listening to music.',
+        email:'ifeoma.anyadike@yahoo.com',
+        phone:'08033911500'
+    },
+    {
+        pos:8,
+        id:'head-of-entertainment',
+        name:'Mrs Akintunde Dorathy',
+        appointment:'Head of Entertainment',
+        image:HeadOfEntertainment,
+        about:'Mrs Akintunde Dorathy hails from Edo State and she is currently the NAFOWA National Head of Entertainment. Mrs Akintunde holds a BSc Enterpreneur and Business Management and Certificate in Human Resources (Alabama). Her hobbies include Travelling, Cooking and Baking.',
+        email:'akindorathy@gmail.com',
+        phone:'08136069553'
+    },
+    {
+        pos:9,
+        id:'head-of-social-welfare',
+        name:'Mrs Zainab Usman',
+        appointment:'Head of Social Welfare',
+        image:HeadOfSocialWelfare,
+        about:'Mrs Zainab Usman hails from Kebbi State and she is currently the NAFOWA National Head of Social Welfare. Mrs Usman holds a BSc Biology and MSc Biotechnology. Her hobbies include Reading and Making Friends.',
+        email:'zainabtukur7@gmail.com',
+        phone:'08060696686'
+    }
+]
+
 export const services = [
     {   
-        index:'education',
+        id:'education',
         src: education,
         alt: "Education",
         description: `NAFOWA operates several schools, including primary, secondary, and vocational schools, which provide quality education to NAF personnel`
     },
     {   
-        index:'healthcare',
+        id:'healthcare',
         src: healthcare,
         alt: "Health Care",
         description: `NAFOWA runs several clinics and hospitals which provide free or subsidized medical care to NAF personnel and their families. 
@@ -54,14 +154,14 @@ export const services = [
     },
 
     {
-        index:'skillacquisition',
+        id:'skillacquisition',
         src: skillacquisition,
         alt: "Skill Acquisition",
         description: `NAFOWA provides skills acquisition and empowerment programs to NAF personnel's wives and other women in the communities where NAF bases are located. 
         These programs are designed to help women become financially independent and contribute to their families' well-being.`
     },
     {   
-        index:'communitydevelopment',
+        id:'communitydevelopment',
         src: communitydev,
         alt: "Community Development",
         description: `NAFOWA undertakes several community development projects, such as the provision of water boreholes, schools, and hospitals.
